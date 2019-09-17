@@ -26,7 +26,7 @@ Vue.component('add-item-component', {
 // item component
 Vue.component('item-component', {
   template: '#item-template',
-  props: ['item']
+  props: ['thing']
 });
 
 // items component
