@@ -51,12 +51,12 @@
   </div>
 </template>
 
-<!-- lsit item template -->
+<!-- list item template -->
 <template id="item-template">
-  <li :class="{'removed': item.checked }">
+  <li :class="{'removed': thing.checked }">
     <div class="checkbox">
       <label>
-        <input type="checkbox" v-model="item.checked"> {{ item.text }}
+        <input type="checkbox" v-model="thing.checked"> {{ thing.text }}
       </label>
     </div>
   </li>
@@ -65,7 +65,7 @@
 <!-- item list template -->
 <template id="items-template">
   <ul>
-    <item-component v-for="item in items" :item="item"></item-component>
+    <item-component v-for="thing in items" :thing="thing"></item-component>
   </ul>
 </template>
 
